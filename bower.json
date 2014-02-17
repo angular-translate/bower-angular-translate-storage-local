@@ -1,6 +1,6 @@
 {
   "name": "angular-translate-storage-local",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "main": "./angular-translate-storage-local.js",
   "dependencies": {
     "angular": "1.0.8",
