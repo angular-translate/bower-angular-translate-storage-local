@@ -1,5 +1,5 @@
 /*!
- * angular-translate - v2.2.0 - 2014-06-03
+ * angular-translate - v2.3.0 - 2014-09-16
  * http://github.com/PascalPrecht/angular-translate
  * Copyright (c) 2014 ; Licensed MIT
  */
@@ -22,12 +22,17 @@ angular.module('pascalprecht.translate').factory('$translateLocalStorage', [
           }
         };
       }();
-    var hasLocalStorageSupport = 'localStorage' in $window && $window.localStorage !== null;
+    var hasLocalStorageSupport = 'localStorage' in $window;
     if (hasLocalStorageSupport) {
       var testKey = 'pascalprecht.translate.storageTest';
       try {
-        $window.localStorage.setItem(testKey, 'foo');
-        $window.localStorage.removeItem(testKey);
+        if ($window.localStorage !== null) {
+          $window.localStorage.setItem(testKey, 'foo');
+          $window.localStorage.removeItem(testKey);
+          hasLocalStorageSupport = true;
+        } else {
+          hasLocalStorageSupport = false;
+        }
       } catch (e) {
         hasLocalStorageSupport = false;
       }
