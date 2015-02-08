@@ -1,7 +1,7 @@
 /*!
- * angular-translate - v2.5.2 - 2014-12-10
+ * angular-translate - v2.6.0 - 2015-02-08
  * http://github.com/angular-translate/angular-translate
- * Copyright (c) 2014 ; Licensed MIT
+ * Copyright (c) 2015 ; Licensed MIT
  */
 angular.module('pascalprecht.translate')
 
@@ -9,6 +9,7 @@ angular.module('pascalprecht.translate')
  * @ngdoc object
  * @name pascalprecht.translate.$translateLocalStorage
  * @requires $window
+ * @requires $translateCookieStorage
  *
  * @description
  * Abstraction layer for localStorage. This service is used when telling angular-translate
