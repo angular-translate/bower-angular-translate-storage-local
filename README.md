@@ -14,6 +14,13 @@ Please file any issues and bugs in our main repository at [angular-translate/ang
 $ bower install angular-translate-storage-local
 ```
 
+### via NPM
+
+```bash
+$ npm install angular-translate-storage-local
+```
+
+
 ### via cdnjs
 
 Please have a look at https://cdnjs.com/libraries/angular-translate-storage-local for specific versions.
