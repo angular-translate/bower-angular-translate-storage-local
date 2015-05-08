@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/mchambaud/bower-angular-translate-storage-local/issues"
   },
-  "homepage": "https://github.com/mchambaud/bower-angular-translate-storage-local"
+  "homepage": "https://github.com/mchambaud/bower-angular-translate-storage-local",
+  "dependencies": {
+    "angular-translate": "^2.7.0"
+  }
 }
