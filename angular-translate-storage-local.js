@@ -19,7 +19,7 @@
   }
 }(this, function () {
 
-$translateLocalStorageFactory.$inject = ['$window', '$translateCookieStorage'];
+$translateLocalStorageFactory.$inject = ['$window'];
 angular.module('pascalprecht.translate')
 
 /**
